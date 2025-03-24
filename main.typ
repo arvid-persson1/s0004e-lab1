@@ -97,7 +97,7 @@ eliminated.
 
 #figure(
     image("images/e8.svg"),
-    caption: "Input and output signals, response altered",
+    caption: "Input and output signals, simple approximation",
 )
 
 = Exercise 9
