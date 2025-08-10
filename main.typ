@@ -1,5 +1,7 @@
 // #set ref(supplement: it => if it.func() == math.equation { })
+#set heading(numbering: "Exercise 1")
 
+=
 = Exercise 1
 
 Three periods of the signal with frequency $f_1 = 3$ are to be rendered. Choose
@@ -32,21 +34,17 @@ The same three signals sampled with $T_s = 1/5$ are illustrated below.
 
 Define System 1:
 
-#math.equation(
-    block: true,
-    $y[n] = (x[n] + x[n-1] + x[n-2] + x[n-3] + x[n-4] + x[n-5] + x[n-6] + x[n-7])/8$
-)
+$
+y[n] = (x[n] + x[n-1] + x[n-2] + x[n-3] + x[n-4] + x[n-5] + x[n-6] + x[n-7])/8
+$
 
 As the system is LTI, the impulse response $h[n]$ is defined as the output
 $y[n]$ when the input $x[n] = delta[n]$:
 
-#math.equation(
-    block: true,
-    $
-    h[n] &= (delta[n] + delta[n-1] + delta[n-2] + delta[n-3] + delta[n-4] + delta[n-5] + delta[n-6] + delta[n-7])/8 \
-         &= cases(1/8 "if" 0 lt.eq n lt.eq 7, 0 "otherwise")
-    $
-)
+$
+h[n] &= (delta[n] + delta[n-1] + delta[n-2] + delta[n-3] + delta[n-4] + delta[n-5] + delta[n-6] + delta[n-7])/8 \
+     &= cases(1/8 "if" 0 lt.eq n lt.eq 7, 0 "otherwise")
+$
 
 = Exercise 5
 
